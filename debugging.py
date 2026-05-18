@@ -45,8 +45,22 @@ print("==== Package Manager & External Package ===== ")
     PHP > composer
     MacOS > brew
     '''
-
 with Image.open("material/CR7.jpg") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("material/GOAT.png")
+
+
+print("==== Debugging ===== ")
+
+
+def get_summary(*args):  # Define
+    total_ammount = 0
+    for a in args:
+        total_ammount += a
+        return total_ammount  # solve the bug via debugging
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5,)  # Call
+print("result:", result)
