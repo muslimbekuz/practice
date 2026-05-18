@@ -5,6 +5,7 @@
 '''
 
 from array import array
+print("====== array =============")
 numbers = array("i", [1, 4, 5, 7, 8, 41])
 print("numbers(1):", numbers)
 
