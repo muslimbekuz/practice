@@ -5,6 +5,7 @@
 '''
 
 
+from PIL import Image
 import turtle
 print("==== Python Package & Core Package ===== ")
 ''' Python Package/Modules: Core, File and External
@@ -34,3 +35,18 @@ with open("material/message.txt", "r") as your_file:
     your_content = your_file.read()
     print("your_content:", your_content)
 print("Done")
+
+
+print("==== Package Manager & External Package ===== ")
+# External Package > https://pypi.org/
+'''Package Managers:
+    Python > pip
+    NodeJS > npm yarn
+    PHP > composer
+    MacOS > brew
+    '''
+
+with Image.open("material/CR7.jpg") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/GOAT.png")
